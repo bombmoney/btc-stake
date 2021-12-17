@@ -1,15 +1,12 @@
 {
-  "name": "ellie",
+  "name": "bomb-landing",
   "version": "1.0.0",
-  "description": "Ellie Template",
-  "author": "Pasquale Vitiello <pasqualevitiello@gmail.com>",
+  "description": "aaron",
+  "author": "Aaron <aaron@1coin.io>",
   "license": "GPLv3",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/pasqualevitiello/ellie.git"
-  },
-  "bugs": {
-    "url": "https://bitbucket.org/pasqualevitiello/ellie/issues"
+    "url": "https://github.com/bombmoney/btc-stake.git"
   },
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
@@ -49,6 +46,6 @@
     "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
   },
-  "homepage": "https://bitbucket.org/pasqualevitiello/ellie#readme",
+  "homepage": "https://btc.bomb.app",
   "main": ".eslintrc.js"
 }

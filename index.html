@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ellie Template</title>
+	<title>Bomb BTC Staking</title>
 	<link href="https://fonts.googleapis.com/css?family=Heebo:400,400i,500,700|Titillium+Web:600" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/style.css">
 	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -18,9 +18,9 @@
 				<div class="site-header-inner">
 					<div class="brand header-brand">
 						<h1 class="m-0">
-							<a href="#">
-								<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-									<title>Ellie</title>
+							<a href="/">
+								<!-- <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+									<title>bomb.money BTC Staking</title>
 									<defs>
 										<linearGradient x1="0%" y1="0%" y2="100%" id="logo-a">
 											<stop stop-color="#4353FF" offset="0%" />
@@ -44,7 +44,8 @@
 										<path d="M31.5.5h-11v1h10v10h1V.5z" stroke="url(#logo-c)"
 											transform="matrix(1 0 0 -1 0 12)" />
 									</g>
-								</svg>
+								</svg> -->
+								<img src="https://github.com/bombmoney/bomb-assets/raw/master/bomb-token-icon.png">
 							</a>
 						</h1>
 					</div>
@@ -63,12 +64,219 @@
 								per year.</p>
 							<div class="hero-form field field-grouped is-revealing">
 								<div class="control control-expanded">
-									<input class="input" type="email" name="email"
-										placeholder="Your best email&hellip;">
+									<style>
+										.btcpay-form {
+											display: inline-flex;
+											align-items: center;
+											justify-content: center;
+										}
+
+										.btcpay-form--inline {
+											flex-direction: row;
+										}
+
+										.btcpay-form--block {
+											flex-direction: column;
+										}
+
+										.btcpay-form--inline .submit {
+											margin-left: 15px;
+										}
+
+										.btcpay-form--block select {
+											margin-bottom: 10px;
+										}
+
+										.btcpay-form .btcpay-custom-container {
+											text-align: center;
+										}
+
+										.btcpay-custom {
+											display: flex;
+											align-items: center;
+											justify-content: center;
+										}
+
+										.btcpay-form .plus-minus {
+											cursor: pointer;
+											font-size: 25px;
+											line-height: 25px;
+											background: #DFE0E1;
+											height: 30px;
+											width: 45px;
+											border: none;
+											border-radius: 60px;
+											margin: auto 5px;
+											display: inline-flex;
+											justify-content: center;
+										}
+
+										.btcpay-form select {
+											-moz-appearance: none;
+											-webkit-appearance: none;
+											appearance: none;
+											color: currentColor;
+											background: transparent;
+											border: 1px solid transparent;
+											display: block;
+											padding: 1px;
+											margin-left: auto;
+											margin-right: auto;
+											font-size: 11px;
+											cursor: pointer;
+										}
+
+										.btcpay-form select:hover {
+											border-color: #ccc;
+										}
+
+										#btcpay-input-price {
+											-moz-appearance: none;
+											-webkit-appearance: none;
+											border: none;
+											box-shadow: none;
+											text-align: center;
+											font-size: 25px;
+											margin: auto;
+											border-radius: 5px;
+											line-height: 35px;
+											background: #fff;
+										}
+
+										#btcpay-input-price::-webkit-outer-spin-button,
+										#btcpay-input-price::-webkit-inner-spin-button {
+											-webkit-appearance: none;
+											margin: 0;
+										}
+									</style>
+									<style>
+										input[type=range].btcpay-input-range {
+											-webkit-appearance: none;
+											width: 100%;
+											background: transparent;
+										}
+
+										input[type=range].btcpay-input-range:focus {
+											outline: 0;
+										}
+
+										input[type=range].btcpay-input-range::-webkit-slider-runnable-track {
+											width: 100%;
+											height: 3.1px;
+											cursor: pointer;
+											box-shadow: 0 0 1.7px #020, 0 0 0 #c98303;
+											background: #f3f3f3;
+											border-radius: 1px;
+											border: 0;
+										}
+
+										input[type=range].btcpay-input-range::-webkit-slider-thumb {
+											box-shadow: none;
+											border: 2.5px solid #cedc21;
+											height: 22px;
+											width: 22px;
+											border-radius: 50%;
+											background: #c98303;
+											cursor: pointer;
+											-webkit-appearance: none;
+											margin-top: -9.45px
+										}
+
+										input[type=range].btcpay-input-range:focus::-webkit-slider-runnable-track {
+											background: #fff;
+										}
+
+										input[type=range].btcpay-input-range::-moz-range-track {
+											width: 100%;
+											height: 3.1px;
+											cursor: pointer;
+											box-shadow: 0 0 1.7px #020, 0 0 0 #c98303;
+											background: #f3f3f3;
+											border-radius: 1px;
+											border: 0;
+										}
+
+										input[type=range].btcpay-input-range::-moz-range-thumb {
+											box-shadow: none;
+											border: 2.5px solid #cedc21;
+											height: 22px;
+											width: 22px;
+											border-radius: 50%;
+											background: #c98303;
+											cursor: pointer;
+										}
+
+										input[type=range].btcpay-input-range::-ms-track {
+											width: 100%;
+											height: 3.1px;
+											cursor: pointer;
+											background: 0 0;
+											border-color: transparent;
+											color: transparent;
+										}
+
+										input[type=range].btcpay-input-range::-ms-fill-lower {
+											background: #e6e6e6;
+											border: 0;
+											border-radius: 2px;
+											box-shadow: 0 0 1.7px #020, 0 0 0 #c98303;
+										}
+
+										input[type=range].btcpay-input-range::-ms-fill-upper {
+											background: #f3f3f3;
+											border: 0;
+											border-radius: 2px;
+											box-shadow: 0 0 1.7px #020, 0 0 0 #c98303;
+										}
+
+										input[type=range].btcpay-input-range::-ms-thumb {
+											box-shadow: none;
+											border: 2.5px solid #cedc21;
+											height: 22px;
+											width: 22px;
+											border-radius: 50%;
+											background: #c98303;
+											cursor: pointer;
+											height: 3.1px;
+										}
+
+										input[type=range].btcpay-input-range:focus::-ms-fill-lower {
+											background: #f3f3f3;
+										}
+
+										input[type=range].btcpay-input-range:focus::-ms-fill-upper {
+											background: #fff;
+										}
+									</style>
+									<form method="POST" action="https://bombpay.bomb.money/api/v1/invoices"
+										class="btcpay-form btcpay-form--block">
+										<input type="hidden" name="storeId"
+											value="C8jpWwS2wSYAYmkDff8j1Qx6h892VNb9Ws4oPX7nAxLg" />
+										<input type="hidden" name="checkoutDesc" value="Amount to stake" />
+										<div class="btcpay-custom-container">
+											<input id="btcpay-input-price" name="price" type="text" min="0" max="none"
+												step="any" value="0.1" style="width: 168px;"
+												oninput="event.preventDefault();isNaN(event.target.value)? document.querySelector('#btcpay-input-price').value = 0.1 : event.target.value; if (this.value < undefined) {this.value = undefined; } else if(this.value > undefined){  this.value = undefined;}"
+												onchange="var el=document.querySelector('#btcpay-input-price'); var price = parseInt(el.value);  if(price< 1) { el.value = 1} else if(price> 50) { el.value = 50} document.querySelector('#btcpay-input-range').value = el.value" />
+											<select name="currency">
+												<option value="USD">USD</option>
+												<option value="GBP">GBP</option>
+												<option value="EUR">EUR</option>
+												<option value="BTC" selected>BTC</option>
+											</select>
+											<input class="btcpay-input-range" id="btcpay-input-range" value="0.1"
+												type="range" min="1" max="50" step="1"
+												style="width:168px;margin-bottom:15px;"
+												oninput="document.querySelector('#btcpay-input-price').value = document.querySelector('#btcpay-input-range').value" />
+										</div>
+										<button type="submit" class="submit" name="submit"
+											style="min-width:168px; min-height:46px; border-radius: 4px;border-style: none;background-color: #0f3b21;"
+											alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor"><span
+												style="color:#fff">Deposit BTC</span>
+										</button>
+									</form>
 								</div>
-								<div class="control">
-									<a class="button button-primary button-block" href="#">Notify Me</a>
-								</div>
+
 							</div>
 						</div>
 						<div class="hero-illustration">
@@ -451,10 +659,9 @@
 												</g>
 											</svg>
 										</div>
-										<h4 class="feature-title m-0">Discover</h4>
+										<h4 class="feature-title m-0">Limited Availability</h4>
 									</div>
-									<p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-										in place of things to emphasise design elements.</p>
+									<p class="text-sm mb-0">Only 250 BTC available for our initial BTC stake.</p>
 								</div>
 							</div>
 							<div class="feature">
@@ -473,10 +680,10 @@
 												</g>
 											</svg>
 										</div>
-										<h4 class="feature-title m-0">Discover</h4>
+										<h4 class="feature-title m-0">2% Monthly APR!</h4>
 									</div>
-									<p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-										in place of things to emphasise design elements.</p>
+									<p class="text-sm mb-0">2% Monthly APR either compounded back into your original
+										investment, or paid out to you.</p>
 								</div>
 							</div>
 							<div class="feature">
@@ -503,10 +710,10 @@
 												</g>
 											</svg>
 										</div>
-										<h4 class="feature-title m-0">Discover</h4>
+										<h4 class="feature-title m-0">Low Commitment</h4>
 									</div>
-									<p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-										in place of things to emphasise design elements.</p>
+									<p class="text-sm mb-0">This special intro staking period has only a 1 year lockup.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -552,20 +759,23 @@
 			</div>
 			<div class="container">
 				<div class="site-footer-inner has-top-divider">
-					<div class="footer-copyright">&copy; 2018 Ellie, all rights reserved</div>
+					<div class="footer-copyright">&copy; 2021 <a href="https://bomb.money">bomb.money</a> - A division
+						of
+						<a href="https://1coin.io">1COIN Assets Inc.</a>
+					</div>
 					<ul class="footer-social-links list-reset">
-						<li>
+						<!-- <li>
 							<a href="#">
-								<span class="screen-reader-text">Facebook</span>
-								<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+								<span class="screen-reader-text">Telegram</span>
+								<svg width="16" height="16" xmlns="http://t.me/bombmoneybsc">
 									<path
 										d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
 										fill="#FFFFFF" />
 								</svg>
 							</a>
-						</li>
+						</li> -->
 						<li>
-							<a href="#">
+							<a href="https://twitter.com/bombmoneybsc">
 								<span class="screen-reader-text">Twitter</span>
 								<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -574,16 +784,16 @@
 								</svg>
 							</a>
 						</li>
-						<li>
-							<a href="#">
-								<span class="screen-reader-text">Google</span>
+						<!-- <li>
+							<a href="https://github.com/bombmoney">
+								<span class="screen-reader-text">Github</span>
 								<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
 										fill="#FFFFFF" />
 								</svg>
 							</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</div>
